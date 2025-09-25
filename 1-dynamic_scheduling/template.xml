@@ -2042,7 +2042,7 @@ union select 'bar'</value>
 <properties>
     <entry>
         <key>bootstrap.servers</key>
-        <value>${KAFKA_BROKERS}</value>
+        <value>kafka1.example.com:9092,kafka2.example.com:9092,kafka3.example.com:9092</value>
     </entry>
     <entry>
         <key>topic</key>
@@ -2323,7 +2323,7 @@ union select 'bar'</value>
     </entry>
     <entry>
         <key>Distributed Cache Service</key>
-        <value>18d99307-c28b-31cf-0000-000000000000</value>
+        <value>d5eeba35-ab9d-3eaf-0000-000000000000</value>
     </entry>
     <entry>
         <key>Cache update strategy</key>
@@ -3453,7 +3453,7 @@ try {
 <properties>
     <entry>
         <key>bootstrap.servers</key>
-        <value>${KAFKA_BROKERS}</value>
+        <value>kafka1.example.com:9092,kafka2.example.com:9092,kafka3.example.com:9092</value>
     </entry>
     <entry>
         <key>topic</key>
@@ -4721,8 +4721,8 @@ FROM
                             <labelIndex>1</labelIndex>
                             <loadBalanceCompression>DO_NOT_COMPRESS</loadBalanceCompression>
                             <loadBalancePartitionAttribute></loadBalancePartitionAttribute>
-                            <loadBalanceStatus>LOAD_BALANCE_NOT_CONFIGURED</loadBalanceStatus>
-                            <loadBalanceStrategy>DO_NOT_LOAD_BALANCE</loadBalanceStrategy>
+                            <loadBalanceStatus>LOAD_BALANCE_INACTIVE</loadBalanceStatus>
+                            <loadBalanceStrategy>ROUND_ROBIN</loadBalanceStrategy>
                             <name></name>
                             <selectedRelationships>split</selectedRelationships>
                             <source>
@@ -5037,7 +5037,7 @@ FROM
                             <versionedComponentId>185bb43c-71da-35b9-8b29-866e0cfc5d63</versionedComponentId>
                             <concurrentlySchedulableTaskCount>1</concurrentlySchedulableTaskCount>
                             <name>errors</name>
-                            <state>STOPPED</state>
+                            <state>RUNNING</state>
                             <type>OUTPUT_PORT</type>
                         </outputPorts>
                         <processGroups>
@@ -5088,7 +5088,7 @@ FROM
     <comments></comments>
     <concurrentlySchedulableTaskCount>1</concurrentlySchedulableTaskCount>
     <name>params</name>
-    <state>STOPPED</state>
+    <state>RUNNING</state>
     <type>INPUT_PORT</type>
 </inputPorts>
 <outputPorts>
@@ -5101,7 +5101,7 @@ FROM
     <versionedComponentId>71be9016-99cb-36b6-8781-4d188c98c830</versionedComponentId>
     <concurrentlySchedulableTaskCount>1</concurrentlySchedulableTaskCount>
     <name>errors</name>
-    <state>STOPPED</state>
+    <state>RUNNING</state>
     <type>OUTPUT_PORT</type>
 </outputPorts>
                             </contents>
@@ -5162,7 +5162,7 @@ FROM
     <comments></comments>
     <concurrentlySchedulableTaskCount>1</concurrentlySchedulableTaskCount>
     <name>params</name>
-    <state>STOPPED</state>
+    <state>RUNNING</state>
     <type>INPUT_PORT</type>
 </inputPorts>
 <outputPorts>
@@ -5175,7 +5175,7 @@ FROM
     <versionedComponentId>71be9016-99cb-36b6-8781-4d188c98c830</versionedComponentId>
     <concurrentlySchedulableTaskCount>1</concurrentlySchedulableTaskCount>
     <name>errors</name>
-    <state>STOPPED</state>
+    <state>RUNNING</state>
     <type>OUTPUT_PORT</type>
 </outputPorts>
                             </contents>
@@ -5236,7 +5236,7 @@ FROM
     <comments></comments>
     <concurrentlySchedulableTaskCount>1</concurrentlySchedulableTaskCount>
     <name>params</name>
-    <state>STOPPED</state>
+    <state>RUNNING</state>
     <type>INPUT_PORT</type>
 </inputPorts>
 <outputPorts>
@@ -5249,7 +5249,7 @@ FROM
     <versionedComponentId>71be9016-99cb-36b6-8781-4d188c98c830</versionedComponentId>
     <concurrentlySchedulableTaskCount>1</concurrentlySchedulableTaskCount>
     <name>errors</name>
-    <state>STOPPED</state>
+    <state>RUNNING</state>
     <type>OUTPUT_PORT</type>
 </outputPorts>
                             </contents>
@@ -5310,7 +5310,7 @@ FROM
     <comments></comments>
     <concurrentlySchedulableTaskCount>1</concurrentlySchedulableTaskCount>
     <name>params</name>
-    <state>STOPPED</state>
+    <state>RUNNING</state>
     <type>INPUT_PORT</type>
 </inputPorts>
 <outputPorts>
@@ -5323,7 +5323,7 @@ FROM
     <versionedComponentId>71be9016-99cb-36b6-8781-4d188c98c830</versionedComponentId>
     <concurrentlySchedulableTaskCount>1</concurrentlySchedulableTaskCount>
     <name>errors</name>
-    <state>STOPPED</state>
+    <state>RUNNING</state>
     <type>OUTPUT_PORT</type>
 </outputPorts>
                             </contents>
@@ -5384,7 +5384,7 @@ FROM
     <comments></comments>
     <concurrentlySchedulableTaskCount>1</concurrentlySchedulableTaskCount>
     <name>params</name>
-    <state>STOPPED</state>
+    <state>RUNNING</state>
     <type>INPUT_PORT</type>
 </inputPorts>
 <outputPorts>
@@ -5397,7 +5397,7 @@ FROM
     <versionedComponentId>71be9016-99cb-36b6-8781-4d188c98c830</versionedComponentId>
     <concurrentlySchedulableTaskCount>1</concurrentlySchedulableTaskCount>
     <name>errors</name>
-    <state>STOPPED</state>
+    <state>RUNNING</state>
     <type>OUTPUT_PORT</type>
 </outputPorts>
                             </contents>
@@ -5458,7 +5458,7 @@ FROM
     <comments></comments>
     <concurrentlySchedulableTaskCount>1</concurrentlySchedulableTaskCount>
     <name>params</name>
-    <state>STOPPED</state>
+    <state>RUNNING</state>
     <type>INPUT_PORT</type>
 </inputPorts>
 <outputPorts>
@@ -5471,7 +5471,7 @@ FROM
     <versionedComponentId>71be9016-99cb-36b6-8781-4d188c98c830</versionedComponentId>
     <concurrentlySchedulableTaskCount>1</concurrentlySchedulableTaskCount>
     <name>errors</name>
-    <state>STOPPED</state>
+    <state>RUNNING</state>
     <type>OUTPUT_PORT</type>
 </outputPorts>
                             </contents>
@@ -5623,7 +5623,7 @@ FROM
 <name>unmatched</name>
 <retry>false</retry>
                             </relationships>
-                            <state>STOPPED</state>
+                            <state>RUNNING</state>
                             <style/>
                             <type>org.apache.nifi.processors.standard.RouteOnAttribute</type>
                         </processors>
@@ -5887,7 +5887,7 @@ FROM
 <properties>
     <entry>
         <key>bootstrap.servers</key>
-        <value>${KAFKA_BROKERS}</value>
+        <value>kafka1.example.com:9092,kafka2.example.com:9092,kafka3.example.com:9092</value>
     </entry>
     <entry>
         <key>topic</key>
@@ -6017,7 +6017,7 @@ FROM
 <name>success</name>
 <retry>false</retry>
                             </relationships>
-                            <state>STOPPED</state>
+                            <state>RUNNING</state>
                             <style/>
                             <type>org.apache.nifi.processors.kafka.pubsub.ConsumeKafkaRecord_2_6</type>
                         </processors>
@@ -6100,7 +6100,7 @@ FROM
 <name>split</name>
 <retry>false</retry>
                             </relationships>
-                            <state>STOPPED</state>
+                            <state>RUNNING</state>
                             <style/>
                             <type>org.apache.nifi.processors.standard.SplitJson</type>
                         </processors>
@@ -6213,7 +6213,7 @@ FROM
 <name>unmatched</name>
 <retry>false</retry>
                             </relationships>
-                            <state>STOPPED</state>
+                            <state>RUNNING</state>
                             <style/>
                             <type>org.apache.nifi.processors.standard.EvaluateJsonPath</type>
                         </processors>
@@ -7347,8 +7347,8 @@ FROM
                             <labelIndex>1</labelIndex>
                             <loadBalanceCompression>DO_NOT_COMPRESS</loadBalanceCompression>
                             <loadBalancePartitionAttribute></loadBalancePartitionAttribute>
-                            <loadBalanceStatus>LOAD_BALANCE_NOT_CONFIGURED</loadBalanceStatus>
-                            <loadBalanceStrategy>DO_NOT_LOAD_BALANCE</loadBalanceStrategy>
+                            <loadBalanceStatus>LOAD_BALANCE_INACTIVE</loadBalanceStatus>
+                            <loadBalanceStrategy>ROUND_ROBIN</loadBalanceStrategy>
                             <name></name>
                             <selectedRelationships>split</selectedRelationships>
                             <source>
@@ -11368,7 +11368,7 @@ union select 'bar'</value>
     </entry>
     <entry>
         <key>Distributed Cache Service</key>
-        <value>18d99307-c28b-31cf-0000-000000000000</value>
+        <value>abcafdb0-7733-3e53-0000-000000000000</value>
     </entry>
     <entry>
         <key>Cache update strategy</key>
@@ -15988,8 +15988,8 @@ FROM
                             <labelIndex>1</labelIndex>
                             <loadBalanceCompression>DO_NOT_COMPRESS</loadBalanceCompression>
                             <loadBalancePartitionAttribute></loadBalancePartitionAttribute>
-                            <loadBalanceStatus>LOAD_BALANCE_NOT_CONFIGURED</loadBalanceStatus>
-                            <loadBalanceStrategy>DO_NOT_LOAD_BALANCE</loadBalanceStrategy>
+                            <loadBalanceStatus>LOAD_BALANCE_INACTIVE</loadBalanceStatus>
+                            <loadBalanceStrategy>ROUND_ROBIN</loadBalanceStrategy>
                             <name></name>
                             <selectedRelationships>split</selectedRelationships>
                             <source>
@@ -16369,7 +16369,7 @@ FROM
                             <versionedComponentId>08c3fb28-0faf-3e87-8c24-4f56d8ac2063</versionedComponentId>
                             <concurrentlySchedulableTaskCount>1</concurrentlySchedulableTaskCount>
                             <name>tasks</name>
-                            <state>STOPPED</state>
+                            <state>RUNNING</state>
                             <type>INPUT_PORT</type>
                         </inputPorts>
                         <outputPorts>
@@ -16382,7 +16382,7 @@ FROM
                             <versionedComponentId>185bb43c-71da-35b9-8b29-866e0cfc5d63</versionedComponentId>
                             <concurrentlySchedulableTaskCount>1</concurrentlySchedulableTaskCount>
                             <name>errors</name>
-                            <state>STOPPED</state>
+                            <state>RUNNING</state>
                             <type>OUTPUT_PORT</type>
                         </outputPorts>
                         <processGroups>
@@ -16433,7 +16433,7 @@ FROM
     <comments></comments>
     <concurrentlySchedulableTaskCount>1</concurrentlySchedulableTaskCount>
     <name>params</name>
-    <state>STOPPED</state>
+    <state>RUNNING</state>
     <type>INPUT_PORT</type>
 </inputPorts>
 <outputPorts>
@@ -16446,7 +16446,7 @@ FROM
     <versionedComponentId>71be9016-99cb-36b6-8781-4d188c98c830</versionedComponentId>
     <concurrentlySchedulableTaskCount>1</concurrentlySchedulableTaskCount>
     <name>errors</name>
-    <state>STOPPED</state>
+    <state>RUNNING</state>
     <type>OUTPUT_PORT</type>
 </outputPorts>
                             </contents>
@@ -16507,7 +16507,7 @@ FROM
     <comments></comments>
     <concurrentlySchedulableTaskCount>1</concurrentlySchedulableTaskCount>
     <name>params</name>
-    <state>STOPPED</state>
+    <state>RUNNING</state>
     <type>INPUT_PORT</type>
 </inputPorts>
 <outputPorts>
@@ -16520,7 +16520,7 @@ FROM
     <versionedComponentId>71be9016-99cb-36b6-8781-4d188c98c830</versionedComponentId>
     <concurrentlySchedulableTaskCount>1</concurrentlySchedulableTaskCount>
     <name>errors</name>
-    <state>STOPPED</state>
+    <state>RUNNING</state>
     <type>OUTPUT_PORT</type>
 </outputPorts>
                             </contents>
@@ -16581,7 +16581,7 @@ FROM
     <comments></comments>
     <concurrentlySchedulableTaskCount>1</concurrentlySchedulableTaskCount>
     <name>params</name>
-    <state>STOPPED</state>
+    <state>RUNNING</state>
     <type>INPUT_PORT</type>
 </inputPorts>
 <outputPorts>
@@ -16594,7 +16594,7 @@ FROM
     <versionedComponentId>71be9016-99cb-36b6-8781-4d188c98c830</versionedComponentId>
     <concurrentlySchedulableTaskCount>1</concurrentlySchedulableTaskCount>
     <name>errors</name>
-    <state>STOPPED</state>
+    <state>RUNNING</state>
     <type>OUTPUT_PORT</type>
 </outputPorts>
                             </contents>
@@ -16655,7 +16655,7 @@ FROM
     <comments></comments>
     <concurrentlySchedulableTaskCount>1</concurrentlySchedulableTaskCount>
     <name>params</name>
-    <state>STOPPED</state>
+    <state>RUNNING</state>
     <type>INPUT_PORT</type>
 </inputPorts>
 <outputPorts>
@@ -16668,7 +16668,7 @@ FROM
     <versionedComponentId>71be9016-99cb-36b6-8781-4d188c98c830</versionedComponentId>
     <concurrentlySchedulableTaskCount>1</concurrentlySchedulableTaskCount>
     <name>errors</name>
-    <state>STOPPED</state>
+    <state>RUNNING</state>
     <type>OUTPUT_PORT</type>
 </outputPorts>
                             </contents>
@@ -16729,7 +16729,7 @@ FROM
     <comments></comments>
     <concurrentlySchedulableTaskCount>1</concurrentlySchedulableTaskCount>
     <name>params</name>
-    <state>STOPPED</state>
+    <state>RUNNING</state>
     <type>INPUT_PORT</type>
 </inputPorts>
 <outputPorts>
@@ -16742,7 +16742,7 @@ FROM
     <versionedComponentId>71be9016-99cb-36b6-8781-4d188c98c830</versionedComponentId>
     <concurrentlySchedulableTaskCount>1</concurrentlySchedulableTaskCount>
     <name>errors</name>
-    <state>STOPPED</state>
+    <state>RUNNING</state>
     <type>OUTPUT_PORT</type>
 </outputPorts>
                             </contents>
@@ -16803,7 +16803,7 @@ FROM
     <comments></comments>
     <concurrentlySchedulableTaskCount>1</concurrentlySchedulableTaskCount>
     <name>params</name>
-    <state>STOPPED</state>
+    <state>RUNNING</state>
     <type>INPUT_PORT</type>
 </inputPorts>
 <outputPorts>
@@ -16816,7 +16816,7 @@ FROM
     <versionedComponentId>71be9016-99cb-36b6-8781-4d188c98c830</versionedComponentId>
     <concurrentlySchedulableTaskCount>1</concurrentlySchedulableTaskCount>
     <name>errors</name>
-    <state>STOPPED</state>
+    <state>RUNNING</state>
     <type>OUTPUT_PORT</type>
 </outputPorts>
                             </contents>
@@ -16968,7 +16968,7 @@ FROM
 <name>unmatched</name>
 <retry>false</retry>
                             </relationships>
-                            <state>STOPPED</state>
+                            <state>RUNNING</state>
                             <style/>
                             <type>org.apache.nifi.processors.standard.RouteOnAttribute</type>
                         </processors>
@@ -17081,7 +17081,7 @@ FROM
 <name>unmatched</name>
 <retry>false</retry>
                             </relationships>
-                            <state>STOPPED</state>
+                            <state>RUNNING</state>
                             <style/>
                             <type>org.apache.nifi.processors.standard.EvaluateJsonPath</type>
                         </processors>
@@ -17164,7 +17164,7 @@ FROM
 <name>split</name>
 <retry>false</retry>
                             </relationships>
-                            <state>STOPPED</state>
+                            <state>RUNNING</state>
                             <style/>
                             <type>org.apache.nifi.processors.standard.SplitJson</type>
                         </processors>
@@ -17328,5 +17328,5 @@ FROM
             <variables/>
         </processGroups>
     </snippet>
-    <timestamp>09/24/2025 15:25:26 UTC</timestamp>
+    <timestamp>09/25/2025 11:35:22 UTC</timestamp>
 </template>
